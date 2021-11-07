@@ -17,6 +17,14 @@
 ## Getting Started
 
 ```bash
+git clone https://github.com/ken556621/vocus-challenge-ken.git
+```
+
+```bash
+cd vocus-challenge-ken/ 
+```
+
+```bash
 npm install
 ```
 
@@ -27,4 +35,5 @@ npm run dev
 Website start on http://localhost:3000
 
 Go to url http://localhost:3000/articles/601aa114fd89780001d24d4d
+
 or click front page 彭顯惠文章列表 button
