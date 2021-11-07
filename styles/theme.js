@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+
 const theme = {
     fontSize: {
         h1: "18px",
@@ -23,5 +25,17 @@ const theme = {
         md: "768px"
     }
 };
+
+export const GlobalStyle = createGlobalStyle`
+  html, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    margin: 0px;
+    background-color: ${props => props.theme.backgroundColor.main};
+  }
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+`;
 
 export default theme;
